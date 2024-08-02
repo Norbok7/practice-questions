@@ -1,0 +1,49 @@
+.to-do-list {
+  width:33%;
+  /* margin: auto; */
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.new-task {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.new-task input {
+  width: 70%;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.new-task button {
+  width: 25%;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.task-category {
+  margin-bottom: 20px;
+}
+
+.task-category h2 {
+  margin-bottom: 10px;
+}
+
+.task-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-category li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.task-category button {
+  margin-left: 10px;
+  cursor: pointer;
+}
