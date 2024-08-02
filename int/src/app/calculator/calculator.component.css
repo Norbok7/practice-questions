@@ -1,0 +1,25 @@
+h1 {
+  text-align: center;
+}
+
+input {
+  width: 98.3%;
+  font-size: 2em;
+  text-align: right;
+}
+
+button {
+  width: 25%;
+  height: 50px;
+  font-size: 1.5em;
+}
+
+button:nth-child(4n) {
+  margin-right: 0;
+}
+
+button:last-of-type {
+  width: 100%;
+}
+
+div{ width: 25%;}

@@ -1,0 +1,26 @@
+<div>
+<h1>Calculator</h1>
+<input [value]="currentInput" readonly>
+<br>
+<button (click)="appendValue('+')">+</button>
+<button (click)="appendValue('-')">-</button>
+<button (click)="appendValue('/')">/</button>
+<button (click)="appendValue('*')">*</button>
+<br>
+<button (click)="appendValue(numberValues.zero)">0</button>
+<button (click)="appendValue(numberValues.one)">1</button>
+<button (click)="appendValue(numberValues.two)">2</button>
+<button (click)="appendValue(numberValues.three)">3</button>
+<br>
+<button (click)="appendValue(numberValues.four)">4</button>
+<button (click)="appendValue(numberValues.five)">5</button>
+<button (click)="appendValue(numberValues.six)">6</button>
+<button (click)="appendValue(numberValues.seven)">7</button>
+<br>
+<button (click)="appendValue(numberValues.eight)">8</button>
+<button (click)="appendValue(numberValues.nine)">9</button>
+<button (click)="calculateResult()">=</button>
+<button (click)="deleteLast()">del</button>
+<br>
+<button (click)="clearAll()">Clear All</button>
+</div>
