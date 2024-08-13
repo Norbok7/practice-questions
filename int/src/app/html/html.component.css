@@ -1,0 +1,18 @@
+li {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+li:nth-child(4) {
+  color: rgb(245, 245, 245);
+}
+
+.bodylist {
+  background-color: black;
+  width: 50%;
+}
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
