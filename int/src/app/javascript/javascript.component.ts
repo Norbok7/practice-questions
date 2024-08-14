@@ -19,7 +19,15 @@ export class JavascriptComponent {
     this.evenOrOdd(4);
     this.forLoop();
   }
+  userObject = {
+    name: 'Gary',
+    age: 33,
+    occupation: 'Software Engineer',
+  }
 
+  buttonMash(user: {name: string, age: number, occupation: string}){
+    console.log(user.name, user.age, user.occupation);
+  }
 
   hello(){
     console.log("Hello World!");
