@@ -16,10 +16,46 @@ export class HtmlComponent {
     { name: 'Orange', price: 1.8 },
     { name: 'Grapes', price: 2.5 }
   ];
+drink: any;
 
   ngOnInit() {
     this.calculateSum(); // Call the method to calculate the sum
     this.fBuzz();
+    this.greet(`alex`
+    );
+    this.multiply(444, 3);
+    console.log(this.person);
+    console.log(this.reverseString("hello")); // Outputs: "olleh"
+    this.calculateArea(10)
+    console.log(this.generateRandomNumber(90, 100));
+    console.log(this.speech('soda'));
+    this.drink = this.speech('soda'); // Set the drink property
+
+  }
+
+  speech(drink: string){
+   return drink;
+  }
+
+  generateRandomNumber(min: number, max: number): number {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  calculateArea(radiusOfCircle: number){
+    const A = 3.14 * radiusOfCircle^2
+    return console.log(A);
+  }
+  reverseString(str: string): string {
+    // Split the string into an array of characters, reverse the array, and join it back into a string
+    return str.split('').reverse().join('');
+  }
+  person = {
+    name: 'john',
+    age: 23,
+    gender: 'male'
+  }
+
+  multiply(num1: number, num2: number){
+return console.log(num1 * num2);
   }
 
   // Method to calculate the sum of numbers from 0 to 99
@@ -59,4 +95,8 @@ export class HtmlComponent {
     }
     basketball = ['lakers', 'magic', 'bulls', 'etc']
     monkey: any;
+
+    greet(name: any){
+      return console.log(`Hello, ${name}!`);
+    }
 }
