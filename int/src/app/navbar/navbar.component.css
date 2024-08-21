@@ -1,11 +1,22 @@
-.navbar-nav .nav-item .nav-link {
-  color: #000;
-}
-
-.navbar-nav .nav-item .dropdown-menu {
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
   background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0;
+  top: 100%; /* Adjusts the dropdown position */
+  left: 0;   /* Aligns the dropdown with the button */
+  z-index: 1000; /* Ensures the dropdown appears above other elements */
 }
 
-.navbar-nav .nav-item .dropdown-item:hover {
-  background-color: #e9ecef;
+/* Show dropdown when the button is clicked */
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Ensures the button has a pointer cursor */
+.dropdown-toggle {
+  cursor: pointer;
 }
