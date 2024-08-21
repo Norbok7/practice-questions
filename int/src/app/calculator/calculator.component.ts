@@ -30,12 +30,12 @@ export class CalculatorComponent {
   clearInput(): void {
     this.currentInput = '';
   }
-
-  deleteLast(): void {
-    if (this.currentInput.length > 0) {
-      this.currentInput = this.currentInput.slice(0, -1);
-    }
-  }
+  deleteLast(){}
+  // deleteLast(): void {
+  //   if (this.currentInput.length > 0) {
+  //     this.currentInput = this.currentInput.slice(0, -1);
+  //   }
+  // }
 
   clearAll(): void {
     this.currentInput = '';

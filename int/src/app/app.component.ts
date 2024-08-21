@@ -5,10 +5,11 @@ import { ToDoListComponent } from "./to-do-list/to-do-list.component";
 import { BasicformComponent } from './basicform/basicform.component';
 import { HtmlComponent } from './html/html.component';
 import { JavascriptComponent } from './javascript/javascript.component';
+import { NavbarComponent } from './navbar/navbar.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [JavascriptComponent, RouterOutlet, CalculatorComponent, ToDoListComponent, BasicformComponent, HtmlComponent],
+  imports: [NavbarComponent, JavascriptComponent, RouterOutlet, CalculatorComponent, ToDoListComponent, BasicformComponent, HtmlComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
