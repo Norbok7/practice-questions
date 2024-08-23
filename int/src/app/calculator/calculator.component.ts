@@ -30,12 +30,11 @@ export class CalculatorComponent {
   clearInput(): void {
     this.currentInput = '';
   }
-  deleteLast(){}
-  // deleteLast(): void {
-  //   if (this.currentInput.length > 0) {
-  //     this.currentInput = this.currentInput.slice(0, -1);
-  //   }
-  // }
+  deleteLast(): void {
+    if (this.currentInput.length > 0) {
+      this.currentInput = this.currentInput.slice(0, -1);
+    }
+  }
 
   clearAll(): void {
     this.currentInput = '';
@@ -43,7 +42,8 @@ export class CalculatorComponent {
 
   calculateResult(): void {
     try {
-      this.currentInput = eval(this.currentInput);
+      // Using Function constructor instead of eval for safer execution
+      this.currentInput = new Function(`return ${this.currentInput}`)();
     } catch {
       this.currentInput = 'Error';
     }
