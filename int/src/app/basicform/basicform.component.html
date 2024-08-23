@@ -1,1 +1,31 @@
-<p>basicform works!</p>
+<div>
+  <h1>FizzBuzz</h1>
+
+  <!-- Display the FizzBuzz function -->
+  <div>
+    <h2>FizzBuzz Function</h2>
+    <h2>
+      fizzBuzz(num: number)
+        for (let i = 1; i <= num; i++)
+          if (i % 3 === 0 && i % 5 === 0)
+            this.results.push('FizzBuzz');
+           else if (i % 3 === 0)
+            this.results.push('Fizz');
+            else if (i % 5 === 0)
+            this.results.push('Buzz');
+
+
+</h2>  </div>
+
+  <!-- Input and button to change the limit -->
+  <div>
+    <label for="limitInput">Enter limit:</label>
+    <input id="limitInput" type="number" [(ngModel)]="inputLimit" />
+    <button (click)="updateLimit()">Generate</button>
+  </div>
+
+  <!-- Display the results -->
+  <ul>
+    <li *ngFor="let result of results">{{ result }}</li>
+  </ul>
+</div>
