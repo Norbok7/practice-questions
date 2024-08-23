@@ -1,14 +1,20 @@
+/* Navbar Styles */
+.navbar {
+  margin-bottom: 1rem;
+}
+
 /* Dropdown Menu Styles */
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   padding: 0.5rem 0;
   top: 100%; /* Adjusts the dropdown position */
   left: 0;   /* Aligns the dropdown with the button */
   z-index: 1000; /* Ensures the dropdown appears above other elements */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 /* Show dropdown when the button is clicked */
@@ -19,4 +25,16 @@
 /* Ensures the button has a pointer cursor */
 .dropdown-toggle {
   cursor: pointer;
+}
+
+/* Optional: Improve dropdown item appearance */
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  color: #212529;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #e9ecef;
 }
