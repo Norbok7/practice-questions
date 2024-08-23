@@ -1,15 +1,19 @@
-.box {width: 33%;}
+.box {width: 33%;
+      }
 h1 {
   text-align: center;
+  color: blue;
 }
 
 input {
-  width: 98.3%;
+  width: 100%;
   font-size: 2em;
   text-align: right;
+  background-color: green;
 }
 
 button {
+  color: rgb(19, 50, 187);
   width: 25%;
   height: 50px;
   font-size: 1.5em;
