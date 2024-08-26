@@ -7,6 +7,8 @@ import { HtmlComponent } from './html/html.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { BasicformComponent } from './basicform/basicform.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FiztestComponent } from './fiztest/fiztest.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,5 +19,7 @@ export const routes: Routes = [
   { path: 'html', component: HtmlComponent },
   { path: 'javascript', component: JavascriptComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'fizzbuzz', component: FiztestComponent }, // Add FizzBuzz component route
+  { path: 'navbar', component: NavbarComponent } // Add Navbar component route
 ];
 

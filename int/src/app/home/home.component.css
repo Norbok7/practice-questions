@@ -1,0 +1,49 @@
+/* review-layout.component.css */
+.review-container {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+}
+
+.side-menu {
+  width: 25%; /* Takes up 25% of the width */
+  background-color: lightgray; /* Background color for the side menu */
+  padding: 10px; /* Padding for the content */
+}
+
+.side-menu ul {
+  list-style-type: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+}
+
+.side-menu li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.reviews {
+  width: 75%; /* Takes up the remaining 75% of the width */
+  height: 100%; /* Takes up full height */
+  display: flex;
+  flex-direction: column;
+}
+
+.topReview, .botReview {
+  width: 100%; /* Takes up the full width of the reviews container */
+  height: 50%; /* Takes up 50% of the height of the reviews container */
+  background-color: lightblue; /* Example background color */
+  margin-bottom: 10px; /* Space between topReview and botReview */
+}
+
+.botReview {
+  background-color: lightcoral; /* Example background color for distinction */
+}
+
+.topReview a, .botReview a {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Inherit color from parent element */
+}
