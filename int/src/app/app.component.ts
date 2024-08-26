@@ -6,10 +6,11 @@ import { BasicformComponent } from './basicform/basicform.component';
 import { HtmlComponent } from './html/html.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FiztestComponent } from './fiztest/fiztest.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent, JavascriptComponent, RouterOutlet, CalculatorComponent, ToDoListComponent, BasicformComponent, HtmlComponent],
+  imports: [FiztestComponent, NavbarComponent, JavascriptComponent, RouterOutlet, CalculatorComponent, ToDoListComponent, BasicformComponent, HtmlComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
