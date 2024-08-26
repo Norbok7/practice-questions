@@ -1,18 +1,80 @@
-li {
-  color: red;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-li:nth-child(4) {
-  color: rgb(245, 245, 245);
-}
-
+/* bodylist.component.css */
 .bodylist {
-  background-color: black;
-  width: 50%;
+  background-color: #1c1c1c; /* Dark background for the container */
+  color: #ffffff; /* White text for readability */
+  width: 80%; /* Adjusted width for better fit */
+  margin: auto; /* Centering the container */
+  padding: 20px; /* Padding for content spacing */
+  border-radius: 10px; /* Rounded corners for modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
-.highlight {
-  background-color: yellow;
+
+h1 {
+  text-align: center;
+  color: #ffffff; /* White color for header */
+  margin-bottom: 20px; /* Space below header */
+}
+
+.fruit-list, .drink-list {
+  list-style-position: inside; /* List items inside the container */
+  margin: 0;
+  padding: 0;
+}
+
+.fruit-list li, .number-list li, .food-items li {
+  color: #ff4d4d; /* Red color for list items */
+  margin-top: 10px; /* Space between items */
   font-weight: bold;
+}
+
+.fruit-list li:nth-child(4) {
+  color: #f5f5f5; /* Light color for the fourth item */
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  color: #007bff; /* Primary blue color for the link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.logo-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%; /* Responsive image */
+  border-radius: 5px; /* Rounded corners for the image */
+}
+
+.highlight {
+  background-color: #f1c40f; /* Highlight color */
+  font-weight: bold;
+}
+
+.black-text {
+  color: #000000; /* Black color for specific items */
+}
+
+.number-list {
+  list-style-position: inside; /* List items inside the container */
+  margin: 0;
+  padding: 0;
+}
+
+.food-items {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none; /* No bullets for the list */
+}
+
+.food-items li {
+  background-color: #333333; /* Dark background for food items */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Space between items */
 }

@@ -1,34 +1,41 @@
+<!-- bodylist.component.html -->
 <div class="bodylist">
-<ol style="color: white;"><b>Types of Fruit</b>
-<li>Apple</li>
-<li>Pear</li>
-<li>Orange</li>
-<li>Grapes</li>
-</ol>
+  <h1>Content Overview</h1>
 
+  <!-- Types of Fruit List -->
+  <ol class="fruit-list">
+    <strong>Types of Fruit</strong>
+    <li>Apple</li>
+    <li>Pear</li>
+    <li>Orange</li>
+    <li>Grapes</li>
+  </ol>
 
-<a href="http://www.google.com">navigate to google webpage</a>
+  <!-- Navigation Link -->
+  <a href="http://www.google.com" class="nav-link">Navigate to Google Webpage</a>
 
-<img
- src="https://www.codelabsdash.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-wide.df2b60db.png&w=828&q=75">
+  <!-- Image Display -->
+  <img src="https://www.codelabsdash.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-wide.df2b60db.png&w=828&q=75" alt="Code Labs Logo" class="logo-image">
 
-<p>This is a <span class="highlight">highlighted</span> word.</p>
+  <!-- Highlighted Text -->
+  <p>This is a <span class="highlight">highlighted</span> word.</p>
 
-<ul>
-  <li><span class="highlight">1</span></li>
-  <li style="color: black;">2</li>
-  <li>3</li>
+  <!-- Numbered List with Highlights -->
+  <ul class="number-list">
+    <li><span class="highlight">1</span></li>
+    <li class="black-text">2</li>
+    <li>3</li>
+  </ul>
 
-</ul>
+  <!-- Dynamic Food Items List -->
+  <ul class="food-items">
+    <li *ngFor="let item of foodItems">
+      {{ item.name }} - ${{ item.price }}
+    </li>
+  </ul>
 
-<ul>
-  <!-- Dynamically display the food items -->
-  <li *ngFor="let item of foodItems">
-    {{ item.name }} - ${{ item.price }}
-  </li>
-</ul>
-<ol style="color: white;">
- {{drink}}
-</ol>
-
+  <!-- Dynamic Drink List -->
+  <ol class="drink-list">
+    {{ drink }}
+  </ol>
 </div>

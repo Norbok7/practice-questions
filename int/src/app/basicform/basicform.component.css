@@ -1,0 +1,104 @@
+/* fizz-buzz.component.css */
+.fizz-buzz {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #343a40; /* Dark color for the main heading */
+}
+
+.code-display {
+  background-color: #f8f9fa; /* Light background for the code display area */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-align: left; /* Align text to the left for code */
+}
+
+.code-display h2 {
+  margin-bottom: 15px;
+  color: #495057; /* Dark color for subheadings */
+  font-size: 1.75rem;
+}
+
+pre {
+  background-color: #e9ecef; /* Slightly darker background for code */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  white-space: pre-wrap; /* Ensures code formatting is preserved */
+  overflow-x: auto; /* Scrollable for long lines */
+  font-size: 0.875rem; /* Smaller font size for code */
+  color: #212529;
+}
+
+/* Input and Button Styles */
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+.input-container label {
+  font-size: 1.1rem;
+  color: #495057;
+}
+
+.input-container input {
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+.input-container button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Results List Styles */
+.results-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.results-list li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  color: #343a40;
+}

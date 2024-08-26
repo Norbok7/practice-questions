@@ -1,31 +1,32 @@
-<div>
+<!-- fizz-buzz.component.html -->
+<div class="fizz-buzz">
   <h1>FizzBuzz</h1>
 
   <!-- Display the FizzBuzz function -->
-  <div>
+  <div class="code-display">
     <h2>FizzBuzz Function</h2>
-    <h2>
+    <pre>
       fizzBuzz(num: number)
         for (let i = 1; i <= num; i++)
           if (i % 3 === 0 && i % 5 === 0)
             this.results.push('FizzBuzz');
            else if (i % 3 === 0)
             this.results.push('Fizz');
-            else if (i % 5 === 0)
+           else if (i % 5 === 0)
             this.results.push('Buzz');
-
-
-</h2>  </div>
+      removed brackets due to error
+    </pre>
+  </div>
 
   <!-- Input and button to change the limit -->
-  <div>
+  <div class="input-container">
     <label for="limitInput">Enter limit:</label>
     <input id="limitInput" type="number" [(ngModel)]="inputLimit" />
     <button (click)="updateLimit()">Generate</button>
   </div>
 
   <!-- Display the results -->
-  <ul>
+  <ul class="results-list">
     <li *ngFor="let result of results">{{ result }}</li>
   </ul>
 </div>

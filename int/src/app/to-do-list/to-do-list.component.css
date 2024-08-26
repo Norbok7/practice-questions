@@ -1,60 +1,81 @@
+/* to-do-list.component.css */
 .to-do-list {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   padding: 20px;
 }
 
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #343a40; /* Dark color for the main heading */
+}
+
+/* Input and Button Styles */
 .new-task {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* Increased margin for better spacing */
 }
 
 .new-task input {
   flex: 1;
-  padding: 10px;
-  font-size: 1em;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  padding: 12px;
+  font-size: 1.1em;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.new-task input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+  outline: none;
 }
 
 .new-task button {
-  padding: 10px;
-  font-size: 1em;
+  padding: 12px 20px;
+  font-size: 1.1em;
   background-color: #007bff;
-  color: #fff;
+  color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .new-task button:hover {
   background-color: #0056b3;
+  transform: scale(1.05);
 }
 
+/* Task Container Styles */
 .task-container {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
+/* Task Category Styles */
 .task-category {
-  width: 30%;
+  flex: 1; /* Allow categories to take up equal space */
   border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #f7f7f7; /* Default background color for categories */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa; /* Light background for categories */
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .task-category h2 {
   margin-bottom: 15px;
-  color: #333;
+  color: #495057; /* Dark color for subheadings */
+  font-size: 1.5rem;
 }
 
 .task-category ul {
@@ -64,13 +85,13 @@
 }
 
 .task-category li {
-  margin-bottom: 10px;
-  padding: 10px;
+  margin-bottom: 12px;
+  padding: 12px;
   background-color: #ffffff;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: grab;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .task-category li:active {

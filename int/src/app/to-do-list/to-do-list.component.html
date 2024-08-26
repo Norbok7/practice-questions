@@ -1,3 +1,4 @@
+<!-- to-do-list.component.html -->
 <div class="to-do-list">
   <h1>To-Do List</h1>
 
@@ -9,27 +10,27 @@
 
   <!-- Tasks in different states -->
   <div class="task-container">
-    <div class="task-category">
+    <div class="task-category to-do" (dragover)="allowDrop($event)" (drop)="onDrop($event, 'toDoTasks')">
       <h2>To Do</h2>
-      <ul (dragover)="allowDrop($event)" (drop)="onDrop($event, 'toDoTasks')">
+      <ul>
         <li *ngFor="let task of toDoTasks" draggable="true" (dragstart)="onDragStart($event, task, 'toDoTasks')">
           {{ task }}
         </li>
       </ul>
     </div>
 
-    <div class="task-category">
+    <div class="task-category in-progress" (dragover)="allowDrop($event)" (drop)="onDrop($event, 'inProgressTasks')">
       <h2>In Progress</h2>
-      <ul (dragover)="allowDrop($event)" (drop)="onDrop($event, 'inProgressTasks')">
+      <ul>
         <li *ngFor="let task of inProgressTasks" draggable="true" (dragstart)="onDragStart($event, task, 'inProgressTasks')">
           {{ task }}
         </li>
       </ul>
     </div>
 
-    <div class="task-category">
+    <div class="task-category completed" (dragover)="allowDrop($event)" (drop)="onDrop($event, 'completedTasks')">
       <h2>Completed</h2>
-      <ul (dragover)="allowDrop($event)" (drop)="onDrop($event, 'completedTasks')">
+      <ul>
         <li *ngFor="let task of completedTasks" draggable="true" (dragstart)="onDragStart($event, task, 'completedTasks')">
           {{ task }}
         </li>
@@ -37,4 +38,3 @@
     </div>
   </div>
 </div>
-
