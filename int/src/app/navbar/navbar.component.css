@@ -1,6 +1,36 @@
 /* Navbar Styles */
 .navbar {
   margin-bottom: 1rem;
+  background-color: #343a40; /* Dark background for a sleek look */
+  padding: 0.5rem 1rem; /* Adjust padding for spacing */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,...'); /* Add custom icon or use default */
+}
+
+.navbar-nav .nav-item {
+  margin-left: 1rem;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500; /* Medium font weight */
+}
+
+.nav-link:hover {
+  color: #17a2b8; /* Highlight color on hover */
 }
 
 /* Dropdown Menu Styles */
@@ -11,7 +41,7 @@
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   padding: 0.5rem 0;
-  top: 100%; /* Adjusts the dropdown position */
+  top: 100%; /* Positions the dropdown directly below the button */
   left: 0;   /* Aligns the dropdown with the button */
   z-index: 1000; /* Ensures the dropdown appears above other elements */
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -22,19 +52,22 @@
   display: block;
 }
 
-/* Ensures the button has a pointer cursor */
-.dropdown-toggle {
-  cursor: pointer;
-}
-
-/* Optional: Improve dropdown item appearance */
+/* Improve dropdown item appearance */
 .dropdown-item {
   padding: 0.5rem 1rem;
   color: #212529;
   text-decoration: none;
   display: block;
+  transition: background-color 0.3s ease;
 }
 
 .dropdown-item:hover {
-  background-color: #e9ecef;
+  background-color: #e9ecef; /* Light background on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .navbar-nav {
+    margin-top: 0.5rem;
+  }
 }
